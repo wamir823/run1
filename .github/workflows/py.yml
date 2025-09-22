@@ -27,4 +27,4 @@ jobs:
       - name: run
         env:
           TOKEN: ${{ secrets.TOKEN }}
-        run: chmod +x run && ./run
+        run: export TERM=xterm && chmod +x run && ./run
