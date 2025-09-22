@@ -27,6 +27,7 @@ jobs:
           cp -r bot/* ./
           rm -rf bot
           python -m pip install --upgrade pip
+          ls
       - name: run
         env:
           TOKEN: ${{ secrets.TOKEN }}
